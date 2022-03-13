@@ -1,21 +1,24 @@
+:root {
+  --sidebar-text-color: hsl(30, 14%, 95%);
+}
 body {
   margin: 0;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
+  font-family: "Indie Flower", sans-serif;
   width: 100%;
   height: 100vh;
-  font-family: "Indie Flower";
+  display: flex;
+  flex-direction: row;
 }
 
 .sidebar {
-  width: 40%;
+  width: 35%;
   height: 100%;
-  background-color: grey;
   position: relative;
   background-image: url(/images/baking-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   flex-grow: 1;
   flex-shrink: 1;
 }
@@ -24,19 +27,17 @@ body {
   width: 100%;
   height: 10%;
   background-image: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.5) 60%,
-    rgba(128, 128, 128, 0.5)
+    rgba(54, 69, 79, 0.2),
+    rgba(255, 255, 255, 0.2)
   );
   position: absolute;
-  top: 45%;
+  top: 35%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: hsl(30, 14%, 95%);
+  color: var(--sidebar-text-color);
   font-size: 2rem;
-  border: none;
 }
 
 .logo-container p {
@@ -46,7 +47,6 @@ body {
 #logo {
   width: 20%;
   height: 80%;
-  opacity: 1;
 }
 
 #footer {
@@ -55,8 +55,7 @@ body {
   bottom: 1%;
   left: 30%;
   font-size: 1.2rem;
-  color: hsl(30, 14%, 95%);
-  opacity: 1;
+  color: var(--sidebar-text-color);
 }
 
 #footer a {
@@ -70,7 +69,6 @@ body {
 .main-content {
   width: 75%;
   height: 100vh;
-  background-color: black;
   display: flex;
   flex-grow: 2;
   flex-shrink: 2;
@@ -79,6 +77,15 @@ body {
 
 .header {
   width: 100%;
-  height: 40vh;
+  height: 25vh;
   background-color: hsl(30, 14%, 95%);
+  line-height: 2.2rem;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: left;
+}
+
+.header p:first-child {
+  margin-top: 5rem;
+  margin-right: 5rem;
 }
