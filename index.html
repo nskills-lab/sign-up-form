@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Luckiest+Guy&display=swa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="sidebar">
@@ -29,24 +29,24 @@
             <h2 data-form-header>Let's do this!</h2>
             <form action="" class="sign-up-form">
                 <div class="inputs-container">
-                <div data-form-left>
-                    <label data-form-first-name for="first-name">First Name</label>
-                    <input type="text" id="first-name" required>
+                    <div data-form-left>
+                        <label data-form-first-name for="first-name" placeholder=" ">First Name*</label>
+                        <input type="text" id="first-name" required>
 
-                    <label data-form-email for="email">Email</label>
-                    <input type="email" id="email" required>
-                    <label data-form-password for="password">Password</label>
-                    <input type="password" id="password" required>
-                </div>
-                <div data-form-right>
-                    <label data-form-last-name for="last-name">Last Name</label>
-                    <input type="text" id="last-name" required>
+                        <label data-form-email for="email">Email*</label>
+                        <input type="email" id="email" required placeholder=" ">
+                        <label data-form-password for="password">Password*</label>
+                        <input type="password" id="password" required minlength="6" title="Passwords do not match" placeholder=" ">
+                    </div>
+                    <div data-form-right>
+                        <label data-form-last-name for="last-name">Last Name*</label>
+                        <input type="text" id="last-name" required placeholder=" ">
 
-                    <label data-form-phone for="phone">Phone Number</label>
-                    <input type="tel" id="phone" required>
-                    <label data-form-password-confirm for="password-confirm">Confirm Password</label>
-                    <input type="password" id="password-confirm" required>
-                </div>
+                        <label data-form-phone for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required placeholder=" ">
+                        <label data-form-password-confirm for="password-confirm">Confirm Password*</label>
+                        <input type="password" id="password-confirm" required minlength="6" placeholder=" ">
+                    </div>
             </div>
                 <button data-btn-create-account>Create Account</button>
                 <p data-log-in-section>Already have an account?  <a data-link-login href=""> Log in</a></p>

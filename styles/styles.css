@@ -4,7 +4,7 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Indie Flower", sans-serif;
+  font-family: "Shadows Into Light", sans-serif;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -41,7 +41,7 @@ body {
 }
 
 .logo-container p {
-  font-family: "Luckiest Guy";
+  font-family: inherit;
   font-size: 2.5rem;
   color: orange;
 }
@@ -108,10 +108,25 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.sign-up-form input:hover,
+.sign-up-form input:focus {
+  border-color: rgba(255, 150, 20, 0.7);
+  box-shadow: 0 4px 4px -1px hsla(30, 2%, 38%, 0.8);
+}
+
+.sign-up-form input:valid {
+  border-color: hsla(30, 2%, 38%, 0.4);
+}
+
+.sign-up-form input:invalid {
+  border-color: rgba(231, 18, 11, 0.7);
+}
+
 .inputs-container {
   display: flex;
   background-color: white;
-  border-bottom: hsl(30, 2%, 38%);
+  border-bottom: none;
+  box-shadow: 0 4px 4px -1px hsla(30, 2%, 38%, 0.5);
 }
 
 div[data-form-left] {
@@ -143,10 +158,11 @@ button[data-btn-create-account] {
   font-weight: bold;
   background-color: rgb(255, 165, 0);
   border: none;
+  box-shadow: 0 4px 4px -1px hsla(30, 2%, 38%, 0.5);
 }
 
 button[data-btn-create-account]:hover {
-  box-shadow: 0 0 0.1rem 0.1rem rgb(255, 150, 20);
+  box-shadow: 0 4px 4px -1px hsla(30, 2%, 38%, 0.8);
   background-color: rgb(255, 150, 20);
 }
 
@@ -161,4 +177,5 @@ a[data-link-login] {
 }
 
 a[data-link-login]:hover {
+  color: black;
 }
