@@ -1,6 +1,7 @@
 :root {
   --sidebar-text-color: hsl(30, 14%, 95%);
 }
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -19,17 +20,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  flex-grow: 1;
-  flex-shrink: 1;
-  overflow-y: scroll;
 }
 
 .logo-container {
   width: 100%;
   height: 10%;
   background-image: linear-gradient(
-    rgba(54, 69, 79, 0.2),
-    rgba(255, 255, 255, 0.2)
+    hsla(0, 0%, 0%, 0.2),
+    hsla(0, 0%, 50%, 0.7)
   );
   position: absolute;
   top: 35%;
@@ -107,6 +105,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
+  background-color: hsl(30, 14%, 95%);
 }
 
 .sign-up-form input {
@@ -118,15 +117,9 @@ body {
 
 .sign-up-form input:hover,
 .sign-up-form input:focus {
-  border-color: rgba(255, 150, 20, 0.7);
-  box-shadow: 0 4px 4px -1px hsla(30, 2%, 38%, 0.8);
-  cursor: pointer;
+  border-color: hsla(22, 88%, 58%, 0.7);
+  box-shadow: 0 4px 4px -1px hsla(22, 88%, 58%, 0.7);
   outline: none;
-}
-
-.sign-up-form input:placeholder-shown {
-  border-color: rgba(231, 18, 11, 0.7);
-  box-shadow: 0 4px 4px -1px rgba(231, 18, 11, 0.7);
 }
 
 .sign-up-form input:valid {
@@ -137,6 +130,7 @@ body {
   display: flex;
   border-bottom: none;
   box-shadow: 0 4px 4px -1px hsla(30, 2%, 38%, 0.5);
+  background-color: white;
 }
 
 div[data-form-left] {
@@ -158,10 +152,9 @@ h2[data-form-header] {
   margin: 1rem 2rem;
 }
 
-.button-create {
+.button-create-container {
   margin-top: 1rem;
   margin-bottom: 2rem;
-  background-color: hsl(30, 14%, 95%);
 }
 
 button[data-btn-create-account] {
@@ -172,22 +165,19 @@ button[data-btn-create-account] {
   font-family: inherit;
   font-size: 1.3rem;
   font-weight: bold;
-  background-color: rgb(255, 165, 0);
+  background-color: hsl(32, 82%, 56%);
   border: none;
   box-shadow: 0 4px 4px -1px hsla(30, 2%, 38%, 0.5);
+  cursor: pointer;
 }
 
 button[data-btn-create-account]:hover {
   box-shadow: 0 4px 4px -1px hsla(30, 2%, 38%, 0.8);
-  background-color: rgb(255, 150, 20);
+  background-color: hsl(32, 82%, 56%);
 }
 
-p[data-log-in-section] {
-  margin: 1rem 2rem;
-}
-
-.log-in {
-  margin-top: 2rem;
+.log-in-container {
+  margin-left: 2rem;
   font-size: 1.3rem;
 }
 
