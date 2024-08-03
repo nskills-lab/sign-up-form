@@ -6,14 +6,19 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Shadows Into Light", sans-serif;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+#parent-container{
+  width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
+ 
 }
 
 .sidebar {
-  width: 35%;
+  width: 30%;
   height: 100%;
   position: relative;
   background-image: url("../images/baking-unsplash.jpg");
@@ -69,8 +74,8 @@ body {
 }
 
 .main-content {
-  width: 75%;
-  height: 100%;
+  width: 70%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -79,13 +84,14 @@ body {
 
 .header {
   width: 100%;
+  height: 30%;
   background-color: inherit;
   line-height: 2.2rem;
-  font-size: 2rem;
-  padding: 2rem;
-  text-align: left;
+  font-size: 1.5rem;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .header p:first-child {
@@ -95,9 +101,10 @@ body {
 
 .form-container {
   width: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  justify-content: space-between;
   background-color: white;
 }
 
@@ -149,7 +156,7 @@ div[data-form-right] {
 }
 
 h2[data-form-header] {
-  margin: 1rem 2rem;
+  margin-left: 1rem;
 }
 
 .button-create-container {
@@ -177,6 +184,8 @@ button[data-btn-create-account]:hover {
 }
 
 .log-in-container {
+  justify-self: flex-end;
+  height: 10%;
   margin-left: 2rem;
   font-size: 1.3rem;
 }

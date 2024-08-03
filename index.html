@@ -12,51 +12,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo-container">
-            <img id= "logo" src="images/icons8-codechef-100.png" alt="Company log">    
-            <p>Baking Made Simple!</p>
+    <div id="parent-container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img id= "logo" src="images/icons8-codechef-100.png" alt="Company log">    
+                <p>Baking Made Simple!</p>
+            </div>
+            <footer id="footer">Photo by <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mae Mu</a> on <a href="https://unsplash.com/s/photos/baking?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></footer>
         </div>
-        <footer id="footer">Photo by <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mae Mu</a> on <a href="https://unsplash.com/s/photos/baking?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></footer>
-    </div>
-    <div class="main-content">
-        <div class="header">
-            <p>This is not a real online service!  You know you need something like this in your life to help you realize your deepest dreams. <br>
-            Sign up <em style="font-weight: bold;">now</em> to get started.
-            </p>
-            <p>You <em style="font-weight: bold;">know</em> you want to.</p>
-        </div>
-        <div class="form-container">
-            <h2 data-form-header>Let's do this!</h2>
-            <form action="#"  class="sign-up-form">
-                <div class="inputs-container">
-                    <div data-form-left>
-                        <label data-form-first-name for="first-name">First Name</label>
-                        <input type="text" id="first-name" required>
-
-                        <label data-form-email for="email">Email</label>
-                        <input type="email" id="email" required>
-                        <label data-form-password for="password">Password</label>
-                        <input type="password" id="password" required minlength="6" title="Passwords do not match">
+        <div class="main-content">
+            <div class="header">
+                <p>This is not a real online service!  You know you need something like this in your life to help you realize your deepest dreams. <br>
+                Sign up <em style="font-weight: bold;">now</em> to get started.
+                </p>
+                <p>You <em style="font-weight: bold;">know</em> you want to.</p>
+            </div>
+            <div class="form-container">
+                <h2 data-form-header>Let's do this!</h2>
+                <form action="#"  class="sign-up-form">
+                    <div class="inputs-container">
+                        <div data-form-left>
+                            <label data-form-first-name for="first-name">First Name</label>
+                            <input type="text" id="first-name" required>
+    
+                            <label data-form-email for="email">Email</label>
+                            <input type="email" id="email" required>
+                            <label data-form-password for="password">Password</label>
+                            <input type="password" id="password" required minlength="6" title="Passwords do not match">
+                        </div>
+                        <div data-form-right>
+                            <label data-form-last-name for="last-name">Last Name</label>
+                            <input type="text" id="last-name" required>
+    
+                            <label data-form-phone for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                            <label data-form-password-confirm for="password-confirm">Confirm Password</label>
+                            <input type="password" id="password-confirm" required minlength="6">
+                        </div>
                     </div>
-                    <div data-form-right>
-                        <label data-form-last-name for="last-name">Last Name</label>
-                        <input type="text" id="last-name" required>
-
-                        <label data-form-phone for="phone">Phone Number</label>
-                        <input type="tel" id="phone" required>
-                        <label data-form-password-confirm for="password-confirm">Confirm Password</label>
-                        <input type="password" id="password-confirm" required minlength="6">
+                    <div class="button-create-container">
+                        <button data-btn-create-account>Create Account</button>
                     </div>
-                </div>
-                <div class="button-create-container">
-                    <button data-btn-create-account>Create Account</button>
-                </div>
-            </form>
+                </form>
+            </div>
+            <div class="log-in-container">
+                <p>Already have an account?  <a data-link-login href=""> Log in</a></p>
+            </div>
         </div>
-        <div class="log-in-container">
-            <p>Already have an account?  <a data-link-login href=""> Log in</a></p>
-        </div>
+
     </div>
 </body>
 </html>
